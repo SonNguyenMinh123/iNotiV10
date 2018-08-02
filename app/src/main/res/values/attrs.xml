@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="ToolbarPanelLayout">
+        <attr name="pullableToolbarId" format="reference"/>
+        <attr name="panelId" format="reference"/>
+    </declare-styleable>
+    <declare-styleable name="ItemcheckBox">
+        <attr name="textFormat" format="reference"/>
+    </declare-styleable>
+    <declare-styleable name="Physics">
+        <!-- Custom -->
+        <!--Turn on and off physics-->
+        <attr name="physics" format="boolean" />
+        <!--Define if the view should have outer boundaries-->
+        <attr name="bounds" format="boolean" />
+        <!--Set the width of the boundaries-->
+        <attr name="boundsSize" format="dimension" />
+        <!--Turn on and off flinging-->
+        <attr name="fling" format="boolean" />
+        <!--Set the number of pixels per meter-->
+        <attr name="pixelsPerMeter" format="float" />
+
+        <!-- World -->
+        <!--Set the number of velocity iterations-->
+        <attr name="velocityIterations" format="integer" />
+        <!--Set the number of position iterations-->
+        <attr name="positionIterations" format="integer" />
+        <!--Set the X component of gravity-->
+        <attr name="gravityX" format="float" />
+        <!--Set the Y component of gravity-->
+        <attr name="gravityY" format="float" />
+
+    </declare-styleable>
+
+    <declare-styleable name="Physics_Layout">
+        <!-- Custom -->
+        <attr name="layout_shape" format="enum">
+            <enum name="rectangle" value="0" />
+            <enum name="circle" value="1" />
+        </attr>
+        <attr name="layout_circleRadius" format="dimension" />
+        <!-- BodyDef -->
+        <attr name="layout_bodyType" format="enum">
+            <enum name="statik" value="0" />
+            <enum name="kinematic" value="1" />
+            <enum name="dynamic" value="2" />
+        </attr>
+        <attr name="layout_fixedRotation" format="boolean" />
+        <!-- FixtureDef -->
+        <attr name="layout_friction" format="float" />
+        <attr name="layout_restitution" format="float" />
+        <attr name="layout_density" format="float" />
+
+    </declare-styleable>
+
+    <declare-styleable name="SwipeLayout">
+        <attr name="drag_edge">
+            <flag name="left" value="1" />
+            <flag name="right" value="2" />
+            <flag name="top" value="4" />
+            <flag name="bottom" value="8" />
+        </attr>
+        <attr name="leftEdgeSwipeOffset" format="dimension" />
+        <attr name="rightEdgeSwipeOffset" format="dimension" />
+        <attr name="topEdgeSwipeOffset" format="dimension" />
+        <attr name="bottomEdgeSwipeOffset" format="dimension" />
+        <attr name="show_mode" format="enum">
+            <enum name="lay_down" value="0" />
+            <enum name="pull_out" value="1" />
+        </attr>
+        <attr name="clickToClose" format="boolean" />
+    </declare-styleable>
+
+    <declare-styleable name="closeButton">
+        <attr name="text_opend" format="string" />
+        <attr name="text_close" format="string"/>
+        <attr name="size_button" format="integer"/>
+    </declare-styleable>
+
+    <declare-styleable name="MultiStyleTextView">
+        <attr name="color1" format="color|integer|reference" />
+        <attr name="color2" format="color|integer|reference" />
+        <attr name="color3" format="color|integer|reference" />
+        <attr name="color4" format="color|integer|reference" />
+        <attr name="color5" format="color|integer|reference" />
+        <attr name="color6" format="color|integer|reference" />
+        <attr name="size1" format="dimension" />
+        <attr name="size2" format="dimension" />
+        <attr name="size3" format="dimension" />
+        <attr name="format" format="string" />
+    </declare-styleable>
+
+
+    <declare-styleable name="StickyListHeadersListView">
+        <attr name="stickyListHeadersListViewStyle" format="reference"/>
+
+        <!-- View attributes -->
+        <attr name="android:clipToPadding" />
+        <attr name="android:scrollbars" />
+        <attr name="android:overScrollMode" />
+        <attr name="android:padding" />
+        <attr name="android:paddingLeft" />
+        <attr name="android:paddingTop" />
+        <attr name="android:paddingRight" />
+        <attr name="android:paddingBottom" />
+
+        <!-- ListView attributes -->
+        <attr name="android:fadingEdgeLength" />
+        <attr name="android:requiresFadingEdge" />
+        <attr name="android:cacheColorHint" />
+        <attr name="android:choiceMode" />
+        <attr name="android:drawSelectorOnTop" />
+        <attr name="android:fastScrollEnabled" />
+        <attr name="android:fastScrollAlwaysVisible" />
+        <attr name="android:listSelector" />
+        <attr name="android:scrollingCache" />
+        <attr name="android:scrollbarStyle" />
+        <attr name="android:divider" />
+        <attr name="android:dividerHeight" />
+        <attr name="android:transcriptMode" />
+        <attr name="android:stackFromBottom" />
+
+        <!-- StickyListHeaders attributes -->
+        <attr name="hasStickyHeaders" format="boolean" />
+        <attr name="isDrawingListUnderStickyHeader" format="boolean" />
+    </declare-styleable>
+
+</resources>
